@@ -13,6 +13,7 @@
 		CA43CEB12154E9C0006932BE /* HitList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA43CEAF2154E9C0006932BE /* HitList.xcdatamodeld */; };
 		CA43CEB32154E9C1006932BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA43CEB22154E9C1006932BE /* Assets.xcassets */; };
 		CA43CEB62154E9C1006932BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA43CEB42154E9C1006932BE /* LaunchScreen.storyboard */; };
+		CA43CEC221550A7C006932BE /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA43CEC121550A7C006932BE /* PeopleService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CA43CEB22154E9C1006932BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA43CEB52154E9C1006932BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA43CEB72154E9C1006932BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA43CEC121550A7C006932BE /* PeopleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		CA43CEA72154E9C0006932BE /* HitList */ = {
 			isa = PBXGroup;
 			children = (
-				CA43CEA82154E9C0006932BE /* AppDelegate.swift */,
-				CA43CEAA2154E9C0006932BE /* ViewController.swift */,
-				CA43CEAC2154E9C0006932BE /* Main.storyboard */,
-				CA43CEB22154E9C1006932BE /* Assets.xcassets */,
-				CA43CEB42154E9C1006932BE /* LaunchScreen.storyboard */,
-				CA43CEB72154E9C1006932BE /* Info.plist */,
-				CA43CEAF2154E9C0006932BE /* HitList.xcdatamodeld */,
+				CA43CEC021550A15006932BE /* supportingFiles */,
+				CA43CEBF215509F1006932BE /* View */,
+				CA43CEBE215509E9006932BE /* Controller */,
+				CA43CEBD215509DD006932BE /* Model */,
 			);
 			path = HitList;
+			sourceTree = "<group>";
+		};
+		CA43CEBD215509DD006932BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA43CEAF2154E9C0006932BE /* HitList.xcdatamodeld */,
+				CA43CEC121550A7C006932BE /* PeopleService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA43CEBE215509E9006932BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA43CEAA2154E9C0006932BE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA43CEBF215509F1006932BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA43CEB42154E9C1006932BE /* LaunchScreen.storyboard */,
+				CA43CEAC2154E9C0006932BE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA43CEC021550A15006932BE /* supportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CA43CEA82154E9C0006932BE /* AppDelegate.swift */,
+				CA43CEB22154E9C1006932BE /* Assets.xcassets */,
+				CA43CEB72154E9C1006932BE /* Info.plist */,
+			);
+			path = supportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA43CEC221550A7C006932BE /* PeopleService.swift in Sources */,
 				CA43CEB12154E9C0006932BE /* HitList.xcdatamodeld in Sources */,
 				CA43CEAB2154E9C0006932BE /* ViewController.swift in Sources */,
 				CA43CEA92154E9C0006932BE /* AppDelegate.swift in Sources */,
@@ -286,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQCVS784;
-				INFOPLIST_FILE = HitList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HitList/supportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQCVS784;
-				INFOPLIST_FILE = HitList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HitList/supportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
